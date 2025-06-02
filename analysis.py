@@ -27,6 +27,6 @@ def profile(resume,job_desc):
         Job Description: {job_desc}
         ''')
     
-    return(st.write(response.text))
+    st.write(response.text)
     
     
