@@ -22,4 +22,4 @@ st.subheader("Paste the job description here",divider=True)
 job_desc=st.text_area(label="Job Description",placeholder="Paste the job description here",height=300,max_chars=10000)
 button=st.button(label="Analyze")
 if button:
-    st.markdown(profile(resume=resume,job_desc=job_desc))
+    profile(resume=resume,job_desc=job_desc)
