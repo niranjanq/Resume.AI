@@ -4,7 +4,7 @@ load_dotenv()  # activate the local env vars
 import streamlit as st
 import google.generativeai as genai
 
-from pdf import read_doc
+from pdf import read_pdf
 from analysis import profile
 # Create the frontend
 st.header(":blue[Resume AI]", divider='green')
