@@ -18,7 +18,14 @@ def profile(resume,job_desc):
     check='Am i a good fit for this job?'
     chance='Chances of getting selected'
     resume_tailoring='Tailor my resume for this job'
-    response=model.generate_content(f'''Act as a HR or ops head and compare {resume_text} with {job_desc}and suggest - {check},{chance},{resume_tailoring}''')
+    response=model.generate_content(f'''Act as an HR or Ops Head and compare the following resume with the job description. Provide:
+        1. {check}
+        2. {chance}
+        3. {resume_tailoring}
+        
+        Resume: {resume_text}
+        Job Description: {job_desc}
+        ''')
     
     return(st.write(response.text))
     
